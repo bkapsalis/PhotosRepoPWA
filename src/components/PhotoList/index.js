@@ -112,7 +112,7 @@ const PhotoList = ({ category }) => {
       name: 'Young Red Shouldered Hawk',
       category: 'portraits',
       description:
-        'Acording to Google Lens this is a Red Shouldered Hawk. This was photo was taken on Los Alamitos Creek Trail just south of Almaden Lake, California."'
+        'Acording to Google Lens this is a Red Shouldered Hawk. This photo was taken on Los Alamitos Creek Trail just south of Almaden Lake, California.'
     },
     {
       name: 'Bobcat',
@@ -127,28 +127,28 @@ const PhotoList = ({ category }) => {
         'California Quale sitting on a fence. The California State Bird.'
     },
     {
-      name: 'f',
+      name: 'Red Shouldered Hawk',
       category: 'portraits',
       description:
-        'f'
+        'Same Hawk as above.'
     },
     {
-      name: 'g',
+      name: 'Great Egret',
       category: 'portraits',
       description:
-        'g'
+      'Great Egret. This photo was taken on Almaden Lake, California.' 
     },
     {
-      name: 'h',
+      name: 'Osprey',
       category: 'portraits',
       description:
-        'h'
+        'Acording to Google Lens this is an Osprey. If you look close you can see a trout in the left claw. This photo was taken on Los Alamitos Creek Trail just south of Almaden Lake, California.'
     },
     {
-      name: 'i',
+      name: 'Geese',
       category: 'portraits',
       description:
-        'i'
+        'Photo was taken on Almaden Lake, California.'
     },
     {
       name: 'j',
@@ -251,12 +251,6 @@ const PhotoList = ({ category }) => {
       category: 'portraits',
       description:
         'z'
-    },
-    {
-      name: 'aa',
-      category: 'portraits',
-      description:
-        'aa'
     }
   ]);
 
