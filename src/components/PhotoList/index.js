@@ -6,251 +6,174 @@ const PhotoList = ({ category }) => {
   const [currentPhoto, setCurrentPhoto] = useState();
 
   const [photos] = useState([
+    
     {
-      name: 'Grocery aisle',
-      category: 'commercial',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Grocery booth',
-      category: 'commercial',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Building exterior',
-      category: 'commercial',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Restaurant table',
-      category: 'commercial',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Cafe interior',
-      category: 'commercial',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Pancakes',
-      category: 'food',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Burrito',
-      category: 'food',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Scallop pasta',
-      category: 'food',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Burger',
-      category: 'food',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Fruit bowl',
-      category: 'food',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
-    },
-    {
-      name: 'Green river',
+      name: 'Almaden Lake North West View',
       category: 'landscape',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        'Almaden Lake Park, Ca'
     },
     {
-      name: 'Docks',
+      name: 'Vasona Lake Southern View',
       category: 'landscape',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      'Vasona Lake County Park, California.'
     },
     {
-      name: 'Panoramic village by sea',
+      name: 'Vasona Lake Old Stone Wall',
       category: 'landscape',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      'Vasona Lake County Park, California.'
     },
     {
-      name: 'Domestic landscape',
+      name: 'Almaden Lake Dusk',
       category: 'landscape',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+      'Almaden Lake Park, Ca'
     },
     {
-      name: 'Park bench',
+      name: 'Almaden Lake',
       category: 'landscape',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+        'Almaden Lake Park, CA'
+    },
+    {
+      name: 'Vasona Lake',
+      category: 'landscape',
+      description:
+        'Vasona Lake County Park, California.'
+    },
+    {
+      name: 'Stone Wall and Steps',
+      category: 'landscape',
+      description:
+      'This photo was taken on Vasona Lake, California.'
     },
     {
       name: 'Turkey Vulture Posing',
-      category: 'portraits',
+      category: 'wildlife',
       description:
         "Spreading wings to disperse heat on a hot day. This photo was taken at St. Joseph's Hill Open Space Preserve trail just north of Lexington Reservoir, California."
     },
     {
       name: 'Bobcat Hiding',
-      category: 'portraits',
+      category: 'wildlife',
       description:
         "You can't see me! This photo was taken on Los Alamitos Creek Trail just south of Almaden Lake, California."
     },
     {
       name: 'Young Red Shouldered Hawk',
-      category: 'portraits',
+      category: 'wildlife',
       description:
         'Acording to Google Lens this is a Red Shouldered Hawk. This photo was taken on Los Alamitos Creek Trail just south of Almaden Lake, California.'
     },
     {
       name: 'Bobcat',
-      category: 'portraits',
+      category: 'wildlife',
       description:
         'Same Bobcat as above.'
     },
     {
       name: 'California Quail',
-      category: 'portraits',
+      category: 'wildlife',
       description:
         'California Quale sitting on a fence. The California State Bird.'
     },
     {
       name: 'Red Shouldered Hawk',
-      category: 'portraits',
+      category: 'wildlife',
       description:
         'Same Hawk as above.'
     },
     {
       name: 'Great Egret',
-      category: 'portraits',
+      category: 'wildlife',
       description:
       'Great Egret. This photo was taken on Almaden Lake, California.' 
     },
     {
       name: 'Osprey',
-      category: 'portraits',
+      category: 'wildlife',
       description:
         'Acording to Google Lens this is an Osprey. If you look close you can see a trout in the left claw. This photo was taken on Los Alamitos Creek Trail just south of Almaden Lake, California.'
     },
     {
       name: 'Geese',
-      category: 'portraits',
+      category: 'wildlife',
       description:
         'Photo was taken on Almaden Lake, California.'
     },
     {
-      name: 'j',
-      category: 'portraits',
+      name: 'Hummingbird',
+      category: 'wildlife',
       description:
-        'j'
+        'This photo was taken on Vasona Lake, California.'
     },
     {
-      name: 'k',
-      category: 'portraits',
+      name: 'Red Shouldered Hawk Back View',
+      category: 'wildlife',
       description:
-        'k'
+        'Same Hawk as above.'
     },
     {
-      name: 'l',
-      category: 'portraits',
+      name: 'Common Merganster',
+      category: 'wildlife',
       description:
-        'l'
+        'Common Merganster aka Goosander. This photo was taken on Los Alamitos Creek Trail just south of Almaden Lake, California.'
     },
     {
-      name: 'm',
-      category: 'portraits',
+      name: 'Mallards',
+      category: 'wildlife',
       description:
-        'm'
+        'This photo was taken on Vasona Lake, California.'
     },
     {
-      name: 'n',
-      category: 'portraits',
+      name: 'Turkey Vultures',
+      category: 'wildlife',
       description:
-        'n'
+        "This photo was taken at St. Joseph's Hill Open Space Preserve trail just north of Lexington Reservoir, California."
     },
     {
-      name: 'o',
-      category: 'portraits',
+      name: 'Acorn Woodpecker with Holes in Tree',
+      category: 'wildlife',
       description:
-        'o'
+        'Note many holes in the tree are full of nuts. This photo was taken on Los Alamitos Creek Trail just south of Almaden Lake, California.'
     },
     {
-      name: 'p',
-      category: 'portraits',
+      name: 'Great Egret Reflecting',
+      category: 'wildlife',
       description:
-        'p'
+      'Great Egret.  This photo was taken on Los Alamitos Creek Trail just south of Almaden Lake, California.' 
     },
     {
-      name: 'q',
-      category: 'portraits',
+      name: 'Spider Web and Spider',
+      category: 'wildlife',
       description:
-        'q'
+      "This photo was taken at St. Joseph's Hill Open Space Preserve trail just north of Lexington Reservoir, California."
     },
     {
-      name: 'r',
-      category: 'portraits',
+      name: 'Bald Eagle',
+      category: 'wildlife',
       description:
-        'r'
+      'Photo was taken on Almaden Lake, California.'
     },
     {
-      name: 's',
-      category: 'portraits',
+      name: 'Acorn Woodpecker',
+      category: 'wildlife',
       description:
-        's'
+        'This photo was taken on Los Alamitos Creek Trail just south of Almaden Lake, California.'
     },
     {
-      name: 't',
-      category: 'portraits',
+      name: 'Bald Eagle Front View',
+      category: 'wildlife',
       description:
-        't'
+      'Photo was taken on Almaden Lake, California.'
     },
     {
-      name: 'u',
-      category: 'portraits',
+      name: 'Turkey Vulture Full Wingspan',
+      category: 'wildlife',
       description:
-        'u'
-    },
-    {
-      name: 'v',
-      category: 'portraits',
-      description:
-        'v'
-    },
-    {
-      name: 'w',
-      category: 'portraits',
-      description:
-        'w'
-    },
-    {
-      name: 'x',
-      category: 'portraits',
-      description:
-        'x'
-    },
-    {
-      name: 'y',
-      category: 'portraits',
-      description:
-        'y'
-    },
-    {
-      name: 'z',
-      category: 'portraits',
-      description:
-        'z'
+      'This photo was taken on Los Alamitos Creek Trail just south of Almaden Lake, California.'
     }
   ]);
 

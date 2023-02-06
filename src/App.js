@@ -6,13 +6,9 @@ import ContactForm from './components/Contact';
 
 function App() {
   const [categories] = useState([
-    {
-      name: 'commercial',
-      description: 'Photos of grocery stores, food trucks, and other commercial projects',
-    },
-    { name: 'portraits', description: 'Portraits of people in my life' },
-    { name: 'food', description: 'Delicious delicacies' },
-    { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
+
+    { name: 'wildlife', description: 'Wild Life Photos. Click Photos to Enlarge!!!' },
+    { name: 'landscape', description: 'Landscape Photos. Click Photos to Enlarge!!!' },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
